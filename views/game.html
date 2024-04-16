@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samartha Webgame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <style>
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 55px;
+            font-size: 12px;
+            color: #555;
+            font-family: 'Verdana', sans-serif;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #555;
+        }
+
+        footer a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your HTML content here -->
+
+    <div id="gameContainer">
+        <!-- Your game container content here -->
+        <table class="table-bordered" id="TicTacToeBoard">
+            <tr>
+                <td onclick="boxClick(this)" class="box" id="1"></td>
+                <td onclick="boxClick(this)" class="box" id="2"></td>
+                <td onclick="boxClick(this)" class="box" id="3"></td>
+            </tr>
+            <tr>
+                <td onclick="boxClick(this)" class="box" id="4"></td>
+                <td onclick="boxClick(this)" class="box" id="5"></td>
+                <td onclick="boxClick(this)" class="box" id="6"></td>
+            </tr>
+            <tr>
+                <td onclick="boxClick(this)" class="box" id="7"></td>
+                <td onclick="boxClick(this)" class="box" id="8"></td>
+                <td onclick="boxClick(this)" class="box" id="9"></td>
+            </tr>
+        </table>
+        <div id="gameInfo">
+            <div id="player"></div>
+            <div id="gameState"></div>
+            <div id="turn"></div>
+        </div>
+        <table class="table-bordered" id="scoreBoard">
+            <tr>
+                <td id="XTag" class="score">X</td>
+                <td id="tieTag" class="score">Tie</td>
+                <td id="OTag" class="score">O</td>
+            </tr>
+            <tr>
+                <td class="score" id="XScore">0</td>
+                <td class="score" id="tieScore">0</td>
+                <td class="score" id="OScore">0</td>
+            </tr>
+        </table>
+        <form action="/">
+        </form>
+    </div>
+
+    <!-- Loading container -->
+    <div id="loadingContainer">
+        <!-- Your loading container content here -->
+        <div id="searchingContainer">
+            <div id="searchingText">
+                <div id="roomId"></div>
+                <h1 style="font-variant: small-caps;">Share the above code to your 🤝</h1>
+                <div id="searchState" style="font-variant: small-caps;">Waiting for your friend ......</div>
+            </div>
+            <form action="/">
+                <div class="menuBtnContainer">
+                    <button id="menuBtn" class="menuBtn loadingMenuBtn btn btn-info" type="button" style="font-variant: small-caps;">Copy Code</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="font-variant: small-caps; font-size: 12px; color: #555; font-family: 'Verdana', sans-serif;">
+        Made With 💙 By <a href="https://samarthags.cloud" target="_blank">Samartha Gs</a>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="/js/fastclick.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/loading.js"></script>
+    <script src="/js/game.js"></script>
+
+    <script>
+        // Function to copy the room ID to clipboard
+        function copyRoomID() {
+            var roomID = document.getElementById('roomId').innerText;
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = roomID;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+        }
+
+        // Attach the copyRoomID function to the menu button
+        document.getElementById('menuBtn').onclick = copyRoomID;
+    </script>
+</body>
+</html>

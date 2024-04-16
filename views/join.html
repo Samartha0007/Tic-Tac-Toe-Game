@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samartha Webgame</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: white;
+            background-size: 200% 100%;
+            animation: gradientBG 10s linear infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        @keyframes gradientBG {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        .container {
+            text-align: center; /* Center align contents */
+        }
+
+        #enterCodeLabel {
+            margin-bottom: 20px; /* Add space below the text */
+            font-size: 18px; /* Increase font size */
+            border-bottom: 1px solid #ccc; /* Add border */
+            padding-bottom: 10px; /* Add padding below the text */
+        }
+
+        form {
+            margin-top: 20px; /* Add space above the form */
+        }
+
+        /* Style for text input */
+        input[type="tel"] {
+            padding: 10px; /* Increase padding */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 5px; /* Add border radius */
+            width: 200px; /* Set width */
+        }
+
+        /* Style for submit button */
+        .startChoiceBtn {
+            appearance: none;
+            background-color: transparent;
+            border: 0.125em solid #1A1A1A;
+            border-radius: 0.9375em;
+            box-sizing: border-box;
+            color: #3B3B3B;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 20px 0; /* Add margin top and bottom */
+            min-height: 3.75em;
+            min-width: 0;
+            outline: none;
+            padding: 1em 2.3em;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            will-change: transform;
+        }
+        
+        .startChoiceBtn:disabled {
+            pointer-events: none;
+        }
+        
+        .startChoiceBtn:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+        
+        .startChoiceBtn:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+
+        /* Style for footer */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="title"></div>
+    <div id="subtitle"></div>
+    <div class="divider"></div>
+    <div class="container">
+        <p style="font-variant: small-caps;">Enter the Room Code </p>
+                <p style="font-variant: small-caps;">That Your Friend Sent To You</p>
+        <form action="/game">
+
+            <br> <!-- Add line break -->
+            <input type="tel" id="gameCodeInput" class="form-control" name="gameCode">
+            <br> <!-- Add line break -->
+            <button class="startChoiceBtn btn btn-info" type="submit"style="font-variant: small-caps;">Join Game</button>
+        </form>
+    </div>
+    <footer style="font-variant: small-caps;">Made With 💙 By Samartha Gs</footer>
+    <form action="/"></form>
+</body>
+</html>

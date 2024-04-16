@@ -1,0 +1,246 @@
+form{
+	margin: 0px;
+	padding: 0px;
+}
+
+table {
+	margin: 20px auto;
+}
+
+#title{
+	text-align: center;
+	font-size: 250%;
+	color: #77aaff;
+	font-weight: 900;
+}
+
+#subtitle{
+	font-size: 150%;
+	margin: none;
+	padding: none;
+	text-align: center;
+	color: #ff77aa;
+	font-weight: 900;
+}
+
+#gameInfo{
+	margin: 20px;
+	text-align: center;
+	font-size: 150%;
+}
+
+.box{
+	font-size: 11vh;
+	font-weight: bold;
+	text-align: center;
+	width: 18vh;
+	height: 18vh;
+}
+
+#gameState{
+	font-weight: bold;
+}
+
+.yourTurn{
+	font-weight: bold;
+}
+
+.notYourTurn{
+	opacity: .4
+}
+
+.playerX{
+	color: #ff77aa;
+}
+
+#XTag{
+	color: #ff77aa;
+	font-weight: bold;
+}
+
+#tieTag{
+	font-weight: bold;
+}
+
+#OTag{
+	color: #77aaff;
+	font-weight: bold;
+}
+
+.playerO{
+	color: #77aaff;
+}
+
+#scoreTitle{
+	text-align: center;
+}
+
+.score{
+	margin: 20px;
+	text-align: center;
+	font-size: 150%;
+	height: 5vh;
+	width: 18vh;
+}
+
+.startChoiceBtn{
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 400px;
+	height: 75px;
+	font-size: 200% !important;
+	background-color: #77aaff;
+}
+
+.menuBtn{
+	appearance: none;
+	background-color: transparent;
+	border: 0.125em solid #1A1A1A;
+	border-radius: 0.9375em;
+	box-sizing: border-box;
+	color: #3B3B3B;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0;
+	min-height: 3.75em;
+	min-width: 0;
+	outline: none;
+	padding: 1em 2.3em;
+	text-align: center;
+	text-decoration: none;
+	transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	will-change: transform;
+
+}
+footer {
+	margin-top: 55px;
+	font-size: 12px;
+	color: #555;
+	font-family: 'Verdana', sans-serif;
+}
+footer a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #555;
+}
+footer a:hover {
+	color: #555;
+}
+
+
+.menuBtn:hover{
+	color: #fff;
+	background-color: #1A1A1A;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);}
+
+.menuBtn:active{
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+.menuBtn:visited{
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+.actionBtn{
+	display: block;
+	margin: auto;
+	width: 40vh;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #77aaff;
+	font-size: 100% !important;
+	outline: none !important;
+}
+
+#scoreBoard{
+	margin-top: 20px;
+}
+
+.panel{
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 400px;
+}
+
+form{
+	margin: none;
+	padding: none;
+}
+
+.gameDesc{
+	position: relative;
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.divider{
+	height: 60px;
+}
+
+#enterCodeLabel{
+	display: block;
+	text-align: center;
+	font-size: 200%;
+}
+
+.startScreenX{
+	font-size: 150%;
+}
+
+.loadingContainer {
+    top: 0%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#searchingText {
+    font-size: 150%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    font-weight: bold;
+    text-align: center;
+}
+#roomId {
+	font-size: 56px; /* Default font size */
+	cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+h1 {
+    font-size: 10px; /* Default font size */
+}
+
+
+.menuBtnContainer {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadingMenuBtn{
+	
+}
+
+#searchState{
+	display: inline;
+}
+
+#gameContainer{
+	display: none;
+}
