@@ -315,8 +315,8 @@ var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
 
 //Same as above, but with port
 //If you want to load on localhost onto a different port, change 4000 to whatever port you please
-var port = process.env.PORT || 1000;
+var port = process.env.PORT || 4000;
 
 http.listen(port, ipaddress, function() {
-    console.log('Server.samartha running');
+    console.log('Server.samartha.cloud running');
 });
