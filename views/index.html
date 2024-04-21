@@ -89,22 +89,18 @@
             transform: translateY(0);
         }
 
-        .profile-circle {
+        .logo-container {
             position: absolute;
             top: 20px;
             right: 20px;
             width: 40px;
             height: 40px;
-            background-color: rgba(26, 26, 26, 0.5); /* Transparent black background */
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
         }
-
-        .profile-circle:hover {
-            background-color: rgba(26, 26, 26, 0.7); /* Darker transparent black on hover */
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            cursor: pointer;
         }
 
         footer {
@@ -126,7 +122,7 @@
 <body>
     <div class="container">
 
-        <img class="logo" src="https://i.ibb.co/xL5wz9C/Yellow-and-Grey-Pastel-Grunge-Designer-Brand-Logo-20240408-212202-0000.png" alt="logo">
+        <img class="logo" src="https://i.ibb.co/QXKTVHN/photo-2024-04-17-11-40-10.jpg" alt="logo">
         <div class="startBtnContainer">
             <div>
                 <form action="/game">               
@@ -149,9 +145,11 @@
                 </form>
             </div>
         </div>
-        <a href="https://samarthags.cloud" class="profile-circle" target="_blank">
-            <i class="fa fa-user" style="color: white;"></i>
-        </a>
+        <div class="logo-container">
+            <a href="https://samarthags.cloud" target="_blank">
+                <img src="https://i.ibb.co/VvhfCCR/icon.png" alt="logo">
+            </a>
+        </div>
         <footer style="font-variant: small-caps;">Made With 💙 By <a href="https://samarthags.cloud" target="_blank">Samartha Gs</a></footer>
     </div>
 </body>
